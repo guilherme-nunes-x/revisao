@@ -1,0 +1,41 @@
+
+body{
+    background-color: rgb(0, 73, 121);
+    height: 900px;
+    font-size: 35px;
+}
+.box{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "menu main rigth"
+                         "menu footer footer";
+    grid-template-rows: 200px 300px 200px ;
+    grid-template-columns: 400px 500px 1fr;
+    gap: 15px;
+}
+.header{
+    background-color: rgb(110, 199, 248);
+    grid-area: header;
+    text-align: center;
+}
+.menu{
+    background-color: rgb(110, 199, 248);
+    grid-area: menu;
+    text-align: center;
+}
+.main{
+    background-color: rgb(110, 199, 248);
+    grid-area: main;
+    text-align: center;
+}
+.rigth{
+    background-color: rgb(110, 199, 248);
+    grid-area: rigth;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(110, 199, 248);
+    grid-area: footer;
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+
+body{
+    background-color: rgb(0, 73, 121);
+    height: 900px;
+    font-size: 50px;
+}
+.box{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+
+}
+.v1{
+    background-color: rgb(80, 145, 180);
+    text-align: center;
+}
+.v2{
+    background-color: rgb(73, 126, 155);
+    text-align: center;
+}
+.v3{
+    background-color: rgb(196, 155, 122);
+    text-align: center;
+}
+.v4{
+    background-color: rgb(248, 110, 237);
+    text-align: center;
+}
+
+.v5{
+    background-color: rgb(248, 110, 191);
+    text-align: center;
+}
+.v6{
+    background-color: rgb(248, 177, 110);
+    text-align: center;
+}
+.exp{
+    padding: 125px;
+    border: 2px black solid;
+}
