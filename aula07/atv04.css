@@ -1,0 +1,88 @@
+body{
+    background-color: white;
+}
+.box{
+    height: 1200px;
+    border: 5px black solid;
+    display: grid;
+    grid-template-areas: "cabeçalho cabeçalho cabeçalho"
+                         "menuL conteudo menuE"
+                         "rodape rodape rodape";
+    grid-template-columns: 200px 1fr 400px;
+    grid-template-rows: 150px 1fr 90px;
+    text-align: center;
+    font-size: 35px;
+}
+.cabeçalho{
+    grid-area: cabeçalho;
+    background-color: aqua;
+}
+.menuL{
+    grid-area: menuL;
+    background-color: lime;
+
+}
+.menuE{
+    grid-area: menuE;
+    background-color: rgb(59, 163, 163);
+    display: grid;
+    grid-template-areas: "p1 p2"
+                         "p3 p4"
+                         "p5 p6"
+                         "p7 p8";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.conteudo{
+    grid-area: conteudo;
+    background-color: darkgoldenrod;
+
+}
+.rodape{
+    grid-area: rodape;
+    background-color: lightskyblue;
+
+}
+.p1{
+    grid-area:p1;
+    background-color: rgb(15, 109, 109);
+}
+.p2{
+    grid-area:p2;
+    background-color: rgb(150, 12, 201);
+}
+.p3{
+    grid-area:p3;
+    background-color: blanchedalmond;
+}
+.p4{
+    grid-area:p4;
+    background-color: blueviolet;
+}
+.p5{
+    grid-area:p5;
+    background-color: bisque;
+}
+.p6{
+    grid-area:p6;
+    background-color: coral;
+}
+.p7{
+    grid-area:p7;
+    background-color: blueviolet;
+}
+.p8{
+    grid-area:p8;
+    background-color: bisque;
+}
+.p1 p{
+    background-color: crimson;
+}
+.p6 p {
+    background-color: darkgreen;
+}
+.p6 #nex{
+    background-color: burlywood;
+}
+

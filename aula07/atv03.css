@@ -1,0 +1,79 @@
+body{
+    background-color: white;
+}
+.box{
+    height: 1200px;
+    border: 5px black solid;
+    display: grid;
+    grid-template-areas: "cabeçalho cabeçalho cabeçalho"
+                         "menuL conteudo menuE"
+                         "rodape rodape rodape";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 90px;
+    text-align: center;
+    font-size: 35px;
+}
+.cabeçalho{
+    grid-area: cabeçalho;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "p1 p2 p3 p4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.menuL{
+    grid-area: menuL;
+    background-color: lime;
+    display: grid;
+    grid-template-areas: "l1"
+                         "l2"
+                        "l3";
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.menuE{
+    grid-area: menuE;
+    background-color: rgb(59, 163, 163);
+    padding-top: 500px;
+}
+.conteudo{
+    grid-area: conteudo;
+    background-color: darkgoldenrod;
+    padding-top: 50%;
+}
+.rodape{
+    grid-area: rodape;
+    background-color: lightskyblue;
+    padding-top: 25px;
+}
+.menuL .l1{
+    grid-area: l1;
+    background-color: azure;
+    padding-top: 140px;
+}
+.menuL .l2{
+    grid-area: l2;
+    background-color: rgb(33, 58, 58);
+    padding-top: 140px;
+}
+.menuL .l3{
+    grid-area: l3;
+    background-color: rgb(67, 194, 194);
+    padding-top: 140px;
+}
+.cabeçalho .p1{
+    grid-area: p1;
+    background-color: rgb(67, 194, 194);
+}
+.cabeçalho .p2{
+    grid-area: p2;
+    background-color: rgb(194, 67, 120);
+}
+.cabeçalho .p3{
+    grid-area: p3;
+    background-color: rgb(194, 181, 67);
+}
+.cabeçalho .p4{
+    grid-area: p4;
+    background-color: rgb(194, 67, 67);
+}
