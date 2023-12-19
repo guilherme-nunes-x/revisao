@@ -1,0 +1,68 @@
+body {
+  background-color: azure;
+  text-align: center;
+  font-size: 30px;
+  max-width: 2000px;
+}
+.box {
+  height: 1600px;
+  display: grid;
+  background-color: aliceblue;
+  grid-template-areas:
+    "cabeçalho cabeçalho"
+    "conteudo lateral"
+    "rodape rodape";
+  grid-template-rows: 300px 1fr 300px;
+  grid-template-columns: 1fr 600px;
+}
+.cabeçalho {
+  background-color: red;
+  grid-area: cabeçalho;
+}
+.lateral {
+  background-color: rgb(87, 144, 219);
+  grid-area: lateral;
+}
+.conteudo {
+  background-color: yellow;
+  grid-area: conteudo;
+  flex-direction: column;
+  display: flex;
+}
+.rodape {
+  background-color: rgb(247, 209, 164);
+  grid-area: rodape;
+  display: flex;
+}
+.c1,
+.c2,
+.c3 {
+  height: 33.33%;
+  width: 100%;
+}
+.c1 {
+  background-color: blueviolet;
+}
+.c2 {
+  background-color: rgb(135, 222, 150);
+}
+.c3 {
+  background-color: rgb(80, 105, 153);
+}
+.p1,
+.p3 {
+  height: 100%;
+  width: 100%;
+}
+.p1 {
+  background-color: rgb(43, 226, 58);
+}
+.p2 {
+  background-color: rgb(135, 222, 150);
+  height: 100%;
+  width: 248%;
+}
+.p3 {
+  background-color: rgb(43, 226, 58);
+}
+
